@@ -8,7 +8,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
 /**
  * 日報情報について画面の入力値・出力値を扱うViewモデル
  *
@@ -54,5 +53,3 @@ public class ReportView {
      */
     private LocalDateTime updatedAt;
 }
-
-    
