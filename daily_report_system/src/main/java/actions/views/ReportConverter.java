@@ -3,8 +3,6 @@ package actions.views;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.hibernate.annotations.ParamDef;
-
 import models.Report;
 
 /**
@@ -23,6 +21,7 @@ public class ReportConverter {
         return new Report(
                 rv.getId(),
                 EmployeeConverter.toModel(rv.getEmployee()),
+                rv.getReportDate(),
                 rv.getTitle(),
                 rv.getContent(),
                 rv.getCreatedAt(),
@@ -44,6 +43,7 @@ public class ReportConverter {
         return new ReportView(
                 r.getId(),
                 EmployeeConverter.toView(r.getEmployee()),
+                r.getReportDate(),
                 r.getTitle(),
                 r.getContent(),
                 r.getCreatedAt(),
